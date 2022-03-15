@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useNavigation } from '@react-navigation/native';
+
 import { 
     Container, 
     LogoContainer,
@@ -13,7 +15,8 @@ import {
 
 
 export default function Welcome(){
-  return(
+    const navigation = useNavigation();
+    return(
     <Container>
         <LogoContainer>
             <Logo
@@ -28,7 +31,7 @@ export default function Welcome(){
             <Title>Monitore, organize seus gastos de qualquer lugar</Title>
             <SubTitle>Faça o login para começar</SubTitle>
 
-            <Button>
+            <Button onPress={() => navigation.navigate('SignIn')}>
                 <TextButton>Acessar</TextButton>
             </Button>
         </Content>
