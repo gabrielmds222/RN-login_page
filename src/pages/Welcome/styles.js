@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
-import {TouchableOpacity} from 'react-native';
+import {View, Image, TouchableOpacity} from 'react-native';
+import * as Animatable from 'react-native-animatable';
 
 export const Container = styled.View`
     flex: 1;
@@ -13,9 +14,9 @@ export const LogoContainer = styled.View`
     align-items: center;
 `;
 
-export const Logo = styled.Image``;
+export const Logo = styled(Animatable.Image)``;
 
-export const Content = styled.View`
+export const Content = styled(Animatable.View)`
     flex: 1;
     background-color: #fff;
     border-top-left-radius: 25px;
