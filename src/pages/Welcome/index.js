@@ -1,28 +1,36 @@
 import React from 'react';
+// import Logo from '../../../assets/logo.png'
+
 import { 
-    StyleSheet, 
-    Text, 
-    View,
-    Image, 
-    TouchableOpacity 
-} from 'react-native';
+    Container, 
+    LogoContainer,
+    Logo, 
+    Content, 
+    Title,
+    SubTitle,
+    Button,
+    TextButton,
+} from './styles';
 
 export default function Welcome(){
   return(
-    <View style={style.container}>
-        <View>
-            <Image 
+    <Container>
+        <LogoContainer>
+            <Logo
              source={require('../../../assets/logo.png')}
              style={{ width: '100%' }}
              resizeMode="contain"
             />
-        </View>
-    </View>
+        </LogoContainer>
+
+        <Content>
+            <Title>Monitore, organize seus gastos de qualquer lugar</Title>
+            <SubTitle>Faça o login para começar</SubTitle>
+
+            <Button>
+                <TextButton>Acessar</TextButton>
+            </Button>
+        </Content>
+    </Container>
   );
 }
-
-const style = StyleSheet.create({
-    container: {
-
-    }
-})
