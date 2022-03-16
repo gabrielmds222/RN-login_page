@@ -27,7 +27,7 @@ export default function Welcome(){
             />
         </LogoContainer>
 
-        <Content delay={600} animation="fadeInUp">
+        <Content delay={500} animation="fadeInUp">
             <Title>Monitore, organize seus gastos de qualquer lugar</Title>
             <SubTitle>Faça o login para começar</SubTitle>
 
