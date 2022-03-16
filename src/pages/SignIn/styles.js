@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
-import { RFPercentage } from 'react-native-responsive-fontsize';
-import {View, Image, TouchableOpacity} from 'react-native';
+import {View, TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 export const Container = styled.View`
